@@ -1,204 +1,144 @@
-*{
-    font-family: sans-serif;
-}
-
 body{
-    padding: 0;
-    margin: 0 !important;
+    background-color: hsl(225, 100%, 94%);;
+    font-family: "Red Hat Display", sans-serif;
+    padding: 20;
+    margin: 60;
     background-image: url(./images/pattern-background-desktop.svg);
     background-size: contain;
     background-repeat: no-repeat;
-    background-color: hsl(225, 100%, 94%);
+
 }
 .container{
+    background-color: white;
     text-align: center;
-    margin: 20px 30%;
-    border-radius: 20px;
-    box-shadow: 0 0 10px 10px lightgrey;
-    background-color: hsl(225, 100%, 98%);
-}
-.hero-image{
-    background-image: url('./images/illustration-hero.svg');
-    background-repeat: no-repeat;
-    background-size:contain;
-    height: 40vh;
-    border-radius: 20px 20px 0 0;
-}
-.hero-section{
-    padding: 20px 100px;
-}
-.hero-section-one{
+    margin: auto;
+    margin-top: 180px;
     margin-bottom: 20px;
-}
-.hero-section-one p{
-    font-size: 1.5em;
-    color: hsl(224, 23%, 55%);
-}
-
-.price-section{
-    display: flex;
-    justify-content:space-between;
-    padding: 5px 20px;
-    background-color:rgb(240, 235, 235);
-}
-.price-section-one{
-    display: flex;
-    justify-content: space-between;
-    
-}
-.price-section img{
-    margin-top: 20px;
-    height: 50%;
-    padding: 0 5px;
-}
-.price-section-two p{
-    font-size: 1.2em;
-}
-.price-section-three{
-    margin-top: 10px;
-    text-decoration: underline;
-    font-size: 1.2em;
-    color: blue;
-}
-.price-section-three:hover{
-    cursor: pointer;
-    text-decoration: none;
-    color:rgb(105, 46, 173);
-}
-.pricing{
-    padding-top: 20px;
-    color: hsl(224, 23%, 55%);
-}
-
-.payment{
-    background-color: hsl(245, 75%, 52%);
-    padding: 20px 55px;
-    font-size: 1.5em;
+    border: 1px black solid;
     border-radius: 10px;
-    color: white;
-    margin: 30px 0;
-    border: none;
+    border-style: none;
+    box-shadow: 0px 11px 0px 0px lightgrey;
+    height: 560px;
+    width: 340px;
+    top:82px;
+    left: 345px;
 }
-.payment:hover{
-    background-color:rgb(105, 46, 173);
-    border: none;
-    cursor:pointer;
+/*.hero_img{
+    padding-left: 45px;
+    border-radius: 24px;
+}*/
+
+.center-text {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    margin: 35px 0 18px 0;
+    top: 255px;
 }
 
-.cancel{
-    border: none;
-    padding: 20px 20px;
-    font-size: 1.5em;
+.hero {
+     height: 155px;
+     width: 100%;
+     border-top-right-radius: 10px;
+     border-top-left-radius: 10px;
+}
+.add_content{
+    text-align: center;
+}
+.add_content h2{
+    color: rgb(40, 45, 54);
+}
+.add_content p{
+    color: rgb(111, 129, 167);
+
+}
+.price-section {display: flex;
+text-align: center;
+margin: auto;
+margin-bottom: 20px;
+width: 80%;
+height: 70px;
+background-color: hsl(225, 100%, 98%);
+justify-content: space-between;
+border: 1px solid black;
+border-radius: 6px;
+border-style: none;
+}
+
+.price-1-img {    
+    margin-top: 13px;
     margin-bottom: 10px;
-    margin-bottom: 20px;
-    background-color:inherit;
-    color: gray;
+    margin-left: 20px;
+    width: 42px;
+    height: 42px;
 }
-.cancel:hover{
+.price-2 {
+    margin-top: 12px;
+}
+.price-3{
+    font-size: 13px;
+    font-weight: 700;
+    align-self: center;
+    margin-right: 11px;
+}
+.payment{
+    background-color: blue;
+    color:white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 300px;
+    border-radius: 8px;
     border: none;
-    cursor:pointer;
-    color: black;
+    box-shadow: 0px 10px 20px 8px rgb(196, 191, 191);
+    font-weight: 800;
+}
+.order{
+    padding-top: 30px;
+    padding-bottom: 5px;
+    margin-top: 30px;
+    border-radius: 8px;
+    width: 300px;
+    border: none;
+    background-color: white;
+    color: hsl(230, 3%, 44%);
+    font-weight: 900;
 }
 
+.price-3 :hover {
+    text-decoration: none;
+    color: hsl(224, 23%, 55%);
+}
 
-/* THIS IS THE MOBILE SCREEN */
-@media (max-width:375px) {
+.payment:hover{
+    background-color: hsl(224, 23%, 55%);
+    cursor: pointer;
+}
 
-    body{
-        padding: 0;
-        margin: 0 !important;
-        background-image: url(./images/pattern-background-desktop.svg);
-        background-size: contain;
+.order:hover{
+    font-weight: 900;
+    color:black;
+    cursor: pointer;
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center; }
+
+.attribution a { 
+        color: hsl(228, 45%, 44%); 
+    }
+
+    @media (max-width: 375px) {
+        body { 
+        font-size: 14px;
+        background-image: url('images/pattern-background-mobile.svg');
         background-repeat: no-repeat;
         background-color: hsl(225, 100%, 94%);
     }
-
-.container{
-    text-align: center;
-    margin: 10px 5%;
-    border-radius: 20px;
-    box-shadow: 0 0 10px 10px lightgrey;
-    background-color: hsl(225, 100%, 98%);
-}
-.hero-image{
-    background-image: url('./images/illustration-hero.svg');
-    background-repeat: no-repeat;
-    background-size:contain;
-    height: 30vh;
-    border-radius: 10px 10px 0 0;
-}
-.hero-section{
-    padding: 10px 20px;
-}
-.hero-section-one{
-    margin-bottom: 10px;
-}
-.hero-section-one p{
-    font-size: 1em;
-    color: hsl(224, 23%, 55%);
-}
-
-.price-section{
-    display: flex;
-    justify-content:space-between;
-    padding: 5px 10px;
-    background-color:rgb(240, 235, 235);
-}
-.price-section-one{
-    display: flex;
-    justify-content: space-between;
-    
-}
-.price-section img{
-    margin-top: 20px;
-    height: 50%;
-    padding: 0 5px;
-}
-.price-section-two p{
-    font-size: 1em;
-}
-.price-section-three{
-    margin-top: 10px;
-    text-decoration: underline;
-    font-size: 1em;
-    color: blue;
-}
-.price-section-three:hover{
-    cursor: pointer;
-    text-decoration: none;
-    color:rgb(105, 46, 173);
-}
-.pricing{
-    padding-top: 20px;
-    color: hsl(224, 23%, 55%);
-}
-
-.payment{
-    background-color: hsl(245, 75%, 52%);
-    padding: 10px 75px;
-    font-size: 1em;
-    border-radius: 10px;
-    color: white;
-    margin: 10px 0;
-    border: none;
-    margin-top: 20px;
-}
-.payment:hover{
-    background-color:rgb(105, 46, 173);
-    border: none;
-    cursor:pointer;
-}
-
-.cancel{
-    border: none;
-    margin-bottom: 10px;
-    background-color:inherit;
-    color: gray;
-}
-.cancel:hover{
-    border: none;
-    cursor:pointer;
-    color: black;
-}
-
-}
+    .container {
+        height: 85vh;
+        width: 300px;
+    }
+    .price-section {
+        padding: 15px;
+    }
+    }
